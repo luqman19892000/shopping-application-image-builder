@@ -11,7 +11,7 @@ jobs:
     env:
       AWS_ACCESS_KEY_ID:  ${{ secrets.access_key }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.secret_key }}
-      AWS_DEFAULT_REGION: "ap-south-1"
+      AWS_DEFAULT_REGION: "ap-south-b"
       PACKER_VERSION: "1.14.2"
 
     steps:
