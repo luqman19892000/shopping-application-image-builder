@@ -1,7 +1,7 @@
 variable "region" {
   description = "aws region name"
-  type = string
-  default = "ap-south-1"
+  type        = string
+  default     = "ap-south-1"
 }
 
 
@@ -20,16 +20,16 @@ variable "project_environment" {
 }
 
 variable "ami_id" {
-    
-  description = "my source ami id"  
-  type = string
-  default = "ami-0f9708d1cd2cfee41"
+
+  description = "my source ami id"
+  type        = string
+  default     = "ami-0f9708d1cd2cfee41"
 }
 
 variable "instance_type" {
-  description = "my source instance type"  
-  type = string
-  default = "t2.micro"
+  description = "my source instance type"
+  type        = string
+  default     = "t2.micro"
 }
 
 locals {
