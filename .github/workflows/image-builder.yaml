@@ -1,7 +1,10 @@
 ---
 name: "Building Shopping Application Image"
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
 jobs:
 
   image-build-job:
