@@ -35,7 +35,7 @@ resource "aws_instance" "webserver" {
 
   ami                    = data.aws_ami.application_image.image_id
   instance_type          = var.instance_type
-  key_name               = "elson-account"
+  key_name               = "zomato-production-git"
   vpc_security_group_ids = [aws_security_group.webserver.id]
   tags = {
     Name = "webserver-${var.project_name}-${var.project_environment}"
